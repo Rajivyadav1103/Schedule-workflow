@@ -1,0 +1,13 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # Runs every day at 9 AM
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Schedule Workflow Demo
+        run: echo "This workflow runs automatically on schedule"
